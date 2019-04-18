@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/fulin?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations : classpath:mapper/*Mapper.xml
+  type-aliases-package : com.example.basicprogram.pojo
+
+#showSql
+logging:
+  level:
+    com.example.basicprogram: debug
